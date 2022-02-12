@@ -4,13 +4,15 @@
 ##                                                      ##
 ## Shell script for generating a boards manager release ##
 ## Created by MCUdude                                   ##
+## Modified by d3lta-v for the SSTuino II               ##
 ## Requires wget, jq and a bash environment             ##
 ##                                                      ##
 ##########################################################
 
 # Change these to match your repo
-AUTHOR=MCUdude       # Github username
-REPOSITORY=MegaCoreX # Github repo name
+AUTHOR=FourierIndustries-LLP       # Github username
+REPOSITORY=SSTuino_II_Core         # Github repo name
+COMPANY_NAME=FourierIndustries
 
 # Get the download URL for the latest release from Github
 DOWNLOAD_URL=$(curl -s https://api.github.com/repos/$AUTHOR/$REPOSITORY/releases/latest | grep "tarball_url" | awk -F\" '{print $4}')
@@ -61,7 +63,7 @@ jq -r                                   \
 --arg file_name  $REPOSITORY-${DOWNLOADED_FILE#"v"}.tar.bz2  \
 '.packages[].platforms[.packages[].platforms | length] |= . +
 {
-  "name": $repository,
+  "name": $company_name,
   "architecture": "megaavr",
   "version": $version,
   "category": "Contributed",
@@ -70,14 +72,7 @@ jq -r                                   \
   "checksum": $checksum,
   "size": $file_size,
   "boards": [
-    {"name": "ATmega4809"},
-    {"name": "ATmega4808"},
-    {"name": "ATmega3209"},
-    {"name": "ATmega3208"},
-    {"name": "ATmega1609"},
-    {"name": "ATmega1608"},
-    {"name": "ATmega809"},
-    {"name": "ATmega808"}
+    {"name": "SSTuino II"}
   ],
   "toolsDependencies": [
     {
