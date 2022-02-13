@@ -21,7 +21,7 @@ set -euo pipefail # stop script upon error of any command
 # Change these to match your repo
 AUTHOR=FourierIndustries-LLP       # Github username
 REPOSITORY=SSTuino_II_Core         # Github repo name
-COMPANY_NAME=FourierIndustries
+PLATFORM_NAME="SSTuino II Series Boards"
 
 # Get the download URL for the latest release from Github
 DOWNLOAD_URL=$(curl -s https://api.github.com/repos/$AUTHOR/$REPOSITORY/releases/latest | grep "tarball_url" | awk -F\" '{print $4}')
@@ -67,17 +67,17 @@ cp "package_${AUTHOR}_${REPOSITORY}_index.json" "package_${AUTHOR}_${REPOSITORY}
 
 # Add new boards release entry into the existing JSON
 # NOTE: Please ensure that the "boards" parameter is correct before running this script
-jq -r                                     \
---arg repository   $REPOSITORY            \
---arg company_name $COMPANY_NAME          \
---arg version      ${DOWNLOADED_FILE#"v"} \
---arg url          $URL                   \
---arg checksum     $SHA256                \
---arg file_size    $FILE_SIZE             \
---arg file_name    $REPOSITORY-${DOWNLOADED_FILE#"v"}.tar.bz2  \
+jq -r                                      \
+--arg repository    $REPOSITORY            \
+--arg platform_name $PLATFORM_NAME         \
+--arg version       ${DOWNLOADED_FILE#"v"} \
+--arg url           $URL                   \
+--arg checksum      $SHA256                \
+--arg file_size     $FILE_SIZE             \
+--arg file_name     $REPOSITORY-${DOWNLOADED_FILE#"v"}.tar.bz2  \
 '.packages[].platforms[.packages[].platforms | length] |= . +
 {
-  "name": $company_name,
+  "name": $platform_name,
   "architecture": "megaavr",
   "version": $version,
   "category": "Contributed",

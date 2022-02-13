@@ -10,7 +10,7 @@
       },
       "platforms": [
         {
-          "name": "FourierIndustries",
+          "name": "SSTuino II Series Boards",
           "architecture": "megaavr",
           "version": "1.0.0-alpha.1",
           "category": "Contributed",
