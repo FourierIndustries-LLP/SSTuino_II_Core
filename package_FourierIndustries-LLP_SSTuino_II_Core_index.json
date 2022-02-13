@@ -1,8 +1,8 @@
 {
   "packages": [
     {
-      "name": "FourierIndustries",
-      "maintainer": "FourierIndustries-LLP",
+      "name": "SSTuino II Series Boards",
+      "maintainer": "FourierIndustries LLP",
       "websiteURL": "https://github.com/FourierIndustries-LLP/SSTuino_II_Core/",
       "email": "",
       "help": {
