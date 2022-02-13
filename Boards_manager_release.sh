@@ -67,13 +67,13 @@ cp "package_${AUTHOR}_${REPOSITORY}_index.json" "package_${AUTHOR}_${REPOSITORY}
 
 # Add new boards release entry into the existing JSON
 # NOTE: Please ensure that the "boards" parameter is correct before running this script
-jq -r                                      \
---arg repository    $REPOSITORY            \
---arg platform_name $PLATFORM_NAME         \
---arg version       ${DOWNLOADED_FILE#"v"} \
---arg url           $URL                   \
---arg checksum      $SHA256                \
---arg file_size     $FILE_SIZE             \
+jq -r                                        \
+--arg repository    $REPOSITORY              \
+--arg platform_name "$PLATFORM_NAME"         \
+--arg version       ${DOWNLOADED_FILE#"v"}   \
+--arg url           $URL                     \
+--arg checksum      $SHA256                  \
+--arg file_size     $FILE_SIZE               \
 --arg file_name     $REPOSITORY-${DOWNLOADED_FILE#"v"}.tar.bz2  \
 '.packages[].platforms[.packages[].platforms | length] |= . +
 {
