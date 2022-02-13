@@ -10,14 +10,14 @@
       },
       "platforms": [
         {
-          "name": "SSTuino II",
+          "name": "FourierIndustries",
           "architecture": "megaavr",
-          "version": "0.0.1",
+          "version": "1.0.0-alpha.1",
           "category": "Contributed",
-          "url": "https://MCUdude.github.io/MegaCoreX/MegaCoreX-1.0.9.tar.bz2",
-          "archiveFileName": "MegaCoreX-1.0.9.tar.bz2",
-          "checksum": "SHA-256:f6d0176308c5f0332061a4aa8951d191eb3e69adb9838aa98e663e11be8b0997",
-          "size": "284480",
+          "url": "https://FourierIndustries-LLP.github.io/SSTuino_II_Core/SSTuino_II_Core-1.0.0-alpha.1.tar.bz2",
+          "archiveFileName": "SSTuino_II_Core-1.0.0-alpha.1.tar.bz2",
+          "checksum": "SHA-256:9ba645afa9723380bf6e0b01c01b57d11f0a03088ed78bd9b9ffc35fcfa5db2b",
+          "size": "299017",
           "boards": [
             {
               "name": "SSTuino II"

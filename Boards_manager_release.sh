@@ -1,5 +1,5 @@
 #!/bin/bash
-set -euxo pipefail # stop script upon error of any command
+set -euo pipefail # stop script upon error of any command
 
 ##########################################################
 ##                                                      ##
