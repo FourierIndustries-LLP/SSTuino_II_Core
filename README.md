@@ -43,7 +43,7 @@ A description of directory2 and its files
 * Open the **File > Preferences** menu item.
 * Enter the following URL in **Additional Boards Manager URLs**:
     ```
-    https://fourierindustries-llp.github.io/SSTuino_II_Core/package_FourierIndustries_LLP_SSTuino_II_Core_index.json
+    https://fourierindustries-llp.github.io/SSTuino_II_Core/package_FourierIndustries-LLP_SSTuino_II_Core_index.json
     ```
 * Separate the URLs using a comma ( **,** ) if you have more than one URL
 * Open the **Tools > Board > Boards Manager...** menu item.
