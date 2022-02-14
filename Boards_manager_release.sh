@@ -11,12 +11,17 @@ set -euo pipefail # stop script upon error of any command
 ##########################################################
 
 #### Instructions for usage
-# 1. Create a new release on GitHub. The tag name must be in the format "v1.0.0" as this script relies on it
-# 2. Ensure that the same folder has an existing .json file (which is in the format of package_${AUTHOR}_${REPOSITORY}_index.json)
-# 3. This script will automatically package up the latest release as a bz2 file, and update the index.json file to contain the latest release
-# 4. Once the updates are pushed to the gh-pages branch of the repo, the Github Pages will be updated accordingly
+# 1. Create a new release on GitHub. The tag name must be prefixed with 'v' as 
+#    this script relies on it
+# 2. Ensure that the same folder has an existing .json file (which is in the 
+#    format of package_${AUTHOR}_${REPOSITORY}_index.json)
+# 3. This script will automatically package up the latest release as a bz2 
+#    file, and update the index.json file to contain the latest release
+# 4. Once the updates are pushed to the gh-pages branch of the repo, the Github
+#    Pages will be updated accordingly
 #
-# If you are rebuilding for an existing build number, please delete the old JSON entry manually before
+# If you are rebuilding for an existing build number, please delete the old 
+# JSON entry in the 'platforms' array manually before
 
 # Change these to match your repo
 AUTHOR=FourierIndustries-LLP       # Github username
