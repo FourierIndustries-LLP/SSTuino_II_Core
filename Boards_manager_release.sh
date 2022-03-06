@@ -28,6 +28,9 @@ AUTHOR=FourierIndustries-LLP       # Github username
 REPOSITORY=SSTuino_II_Core         # Github repo name
 PLATFORM_NAME="SSTuino II Series Boards"
 
+# Refresh submodules
+git submodule update --init --recursive
+
 # Get the download URL for the latest release from Github
 DOWNLOAD_URL=$(curl -s https://api.github.com/repos/$AUTHOR/$REPOSITORY/releases/latest | grep "tarball_url" | awk -F\" '{print $4}')
 
@@ -52,6 +55,9 @@ printf "Done!\n"
 
 # Delete downloaded file and empty megaavr folder
 rm -rf ${DOWNLOADED_FILE}.tar.bz2 $REPOSITORY-${DOWNLOADED_FILE#"v"}/megaavr
+
+# Move all libraries to the folder
+cp -r libraries/* $REPOSITORY-${DOWNLOADED_FILE#"v"}/libraries
 
 # Compress folder to tar.bz2
 printf "\nCompressing folder $REPOSITORY-${DOWNLOADED_FILE#"v"} to $REPOSITORY-${DOWNLOADED_FILE#"v"}.tar.bz2\n"

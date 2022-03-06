@@ -1,0 +1,3 @@
+[submodule "libraries/WiFiNINA-SSTuino"]
+	path = libraries/WiFiNINA-SSTuino
+	url = https://github.com/FourierIndustries-LLP/WiFiNINA-SSTuino.git
