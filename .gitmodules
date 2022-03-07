@@ -4,3 +4,12 @@
 [submodule "libraries/Cayenne-MQTT-Arduino"]
 	path = libraries/Cayenne-MQTT-Arduino
 	url = https://github.com/myDevicesIoT/Cayenne-MQTT-Arduino.git
+[submodule "libraries/ArduinoHttpClient"]
+	path = libraries/ArduinoHttpClient
+	url = https://github.com/arduino-libraries/ArduinoHttpClient.git
+[submodule "libraries/ArduinoJson"]
+	path = libraries/ArduinoJson
+	url = https://github.com/bblanchon/ArduinoJson.git
+[submodule "libraries/arduino-mqtt"]
+	path = libraries/arduino-mqtt
+	url = https://github.com/256dpi/arduino-mqtt.git
