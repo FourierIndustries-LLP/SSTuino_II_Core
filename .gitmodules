@@ -1,3 +1,6 @@
 [submodule "libraries/WiFiNINA-SSTuino"]
 	path = libraries/WiFiNINA-SSTuino
 	url = https://github.com/FourierIndustries-LLP/WiFiNINA-SSTuino.git
+[submodule "libraries/Cayenne-MQTT-Arduino"]
+	path = libraries/Cayenne-MQTT-Arduino
+	url = https://github.com/myDevicesIoT/Cayenne-MQTT-Arduino.git
