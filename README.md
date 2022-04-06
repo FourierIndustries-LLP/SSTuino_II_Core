@@ -20,20 +20,7 @@ This repository is the Arduino core that powers the SSTuino II, a compact and ea
 
 ## Directories
 
-**Short version:**
-
-* `directory1/` - Directory1's blurb goes here
-* `directory2/` - Directory2's blurb goes here
-
-**Long Version:**
-
-### `directory1/` - Directory1's blurb goes here
-
-A description of directory1 and its files
-
-### `directory2/` - Directory2's blurb goes here
-
-A description of directory2 and its files
+* `megaavr/` - Arduino source code for this core
 
 ## Installation
 
@@ -64,15 +51,11 @@ WIP
 
 ## Documentation ![Inline docs](http://inch-ci.org/github/dwyl/hapi-auth-jwt2.svg?branch=master)
 
-WIP
-
-## Caveats
-
-WIP
+Please refer to the [FourierIndustries Knowledge Base](https://knowledge.fourier.industries).
 
 ## Known issues
 
-WIP
+There are no known issues in this repo. 
 
 ## Contributing
 
