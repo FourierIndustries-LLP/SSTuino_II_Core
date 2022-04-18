@@ -41,7 +41,14 @@ This repository is the Arduino core that powers the SSTuino II, a compact and ea
 
 ### Manual Installation
 
-Click on the "Download ZIP" button. Extract the ZIP file, and move the extracted folder to the location "**~/Documents/Arduino/hardware**". Create the "hardware" folder if it doesn't exist.
+Click on the "Download ZIP" button. Extract the ZIP file, and move the extracted folder to the location "**~/Documents/Arduino/hardware**" (for macOS). Create the "hardware" folder if it doesn't exist.
+
+In addition, you will need to manually install the following libraries:
+
+* [WiFiNINA-SSTuino](https://github.com/FourierIndustries-LLP/WiFiNINA-SSTuino)
+* [ArduinoHTTPClient](https://github.com/arduino-libraries/ArduinoHttpClient)
+* [arduino-mqtt](https://github.com/256dpi/arduino-mqtt)
+* [ArduinoJson](https://github.com/bblanchon/ArduinoJson)
 
 Open Arduino IDE and a new category in the boards menu called "SSTuino II" will show up.
 
@@ -51,7 +58,7 @@ WIP
 
 ## Documentation ![Inline docs](http://inch-ci.org/github/dwyl/hapi-auth-jwt2.svg?branch=master)
 
-Please refer to the [FourierIndustries Knowledge Base](https://knowledge.fourier.industries).
+Please refer to the [FourierIndustries Knowledge Base](https://knowledge.fourier.industries). Beginners can refer to the Essentials Track, which has tutorials on the basics of an Arduino, and the fundamentals of IoT.
 
 ## Known issues
 
