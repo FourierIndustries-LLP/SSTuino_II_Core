@@ -50,6 +50,7 @@ printf "Done!\n"
 
 # Move files out of the megaavr folder
 printf "\nModifiying folder structure\n"
+# Note: this operation will fail if you accidentally created a tag+release from gh-pages! Make sure you are on master first
 mv $REPOSITORY-${DOWNLOADED_FILE#"v"}/megaavr/* $REPOSITORY-${DOWNLOADED_FILE#"v"}
 printf "Done!\n"
 
