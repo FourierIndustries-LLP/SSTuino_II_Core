@@ -4,9 +4,7 @@
 
 > The Arduino core powering the SSTuino II
 
-<p align="center">
-<img src="https://avatars.githubusercontent.com/u/82296175" width="33%" \>
-</p>
+![Pinout](./SSTuino%20II%20Rev%20A%20Pinout%20Final.png)
 
 - [x] ⭕️ Arduino Core (Software)
 - [ ] 📟 Hardware / CAD Files
