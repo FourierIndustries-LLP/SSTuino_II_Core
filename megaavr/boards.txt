@@ -28,8 +28,8 @@ menu.resetpin=Reset Button
 4809.bootloader.APPEND=0x00
 # Default lockbit, do NOT modify
 4809.bootloader.LOCKBIT=0xC5
-# 4.3V brownout
-4809.bootloader.BODCFG=0xF4
+# 3.3V brownout, for more info, see ATmega4809's datasheet Figure 32-1.
+4809.bootloader.BODCFG=0x94
 # No bootloader as SSTuino II is programmed through JTAG2UPDI
 4809.bootloader.file=empty/empty.hex
 4809.bootloader.BOOTEND=0x00
