@@ -28,7 +28,8 @@ AUTHOR=FourierIndustries-LLP       # Github username
 REPOSITORY=SSTuino_II_Core         # Github repo name
 PLATFORM_NAME="SSTuino II Series Boards"
 
-# Refresh submodules
+# Refresh submodules (this will only download submodules, but will not refresh to latest commit)
+# if you need to refresh a commit, do: git submodule update --remote <specific path to submodule>
 git submodule update --init --recursive
 
 # Get the download URL for the latest release from Github
