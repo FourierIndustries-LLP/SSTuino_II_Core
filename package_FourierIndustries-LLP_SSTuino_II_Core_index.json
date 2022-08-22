@@ -112,8 +112,8 @@
           "category": "Contributed",
           "url": "https://FourierIndustries-LLP.github.io/SSTuino_II_Core/SSTuino_II_Core-1.0.1.tar.bz2",
           "archiveFileName": "SSTuino_II_Core-1.0.1.tar.bz2",
-          "checksum": "SHA-256:78a0c95b56da9044c0b0e6ec73cbed8b8711a21bf80914bf819a22cfdae4e93f",
-          "size": "1552126",
+          "checksum": "SHA-256:a98962a61247be29e006d4da44255b479b2ecdeb01182da6c554983888d3322b",
+          "size": "1552263",
           "boards": [
             {
               "name": "SSTuino II"
