@@ -13,3 +13,6 @@
 [submodule "libraries/arduino-mqtt"]
 	path = libraries/arduino-mqtt
 	url = https://github.com/256dpi/arduino-mqtt.git
+[submodule "libraries/RBD_Timer"]
+	path = libraries/RBD_Timer
+	url = https://github.com/alextaujenis/RBD_Timer.git
