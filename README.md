@@ -47,12 +47,19 @@ In addition, you will need to manually install the following libraries:
 * [ArduinoHTTPClient](https://github.com/arduino-libraries/ArduinoHttpClient)
 * [arduino-mqtt](https://github.com/256dpi/arduino-mqtt)
 * [ArduinoJson](https://github.com/bblanchon/ArduinoJson)
+* [RBD_Timer](https://github.com/alextaujenis/RBD_Timer)
 
 Open Arduino IDE and a new category in the boards menu called "SSTuino II" will show up.
 
 ## Usage
 
-WIP
+This Arduino core functions mostly identically to all other Arduino cores, with some extensions specific to the ATmega4809 and its peripherals.
+
+The following high-quality libraries for ATmega4809-specific extensions were written by [MCUdude](https://github.com/MCUdude), and are included in this core as well:
+
+- Comparator
+- Event
+- Logic
 
 ## Documentation ![Inline docs](http://inch-ci.org/github/dwyl/hapi-auth-jwt2.svg?branch=master)
 
@@ -64,6 +71,6 @@ There are no known issues in this repo.
 
 ## Contributing
 
-If you encounter any issues with this repository, please do not hesitate to open an issue. 
+If you encounter any issues with this repository, please do not hesitate to open an issue on this repository's Issue Tracker.
 
 This was based on the awesome [MegaCoreX](https://github.com/MCUdude/MegaCoreX) made by [MCUdude](https://github.com/MCUdude) and is licensed as LGPL-2.1. 
