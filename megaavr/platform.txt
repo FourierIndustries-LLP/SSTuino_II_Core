@@ -153,6 +153,7 @@ tools.avrdude_nanoevery.bootloader.fuse6="-Ufuse6:w:{bootloader.SYSCFG1}:m"
 tools.avrdude_nanoevery.bootloader.fuse7="-Ufuse7:w:{bootloader.APPEND}:m"
 tools.avrdude_nanoevery.bootloader.fuse8="-Ufuse8:w:{bootloader.BOOTEND}:m"
 tools.avrdude_nanoevery.bootloader.lock="-Ulock:w:{bootloader.LOCKBIT}:m"
+tools.avrdude_nanoevery.bootloader.pattern="{cmd.path}" "-C{config.path}" -v -p{build.mcu} -c{protocol} {program.extra_params} "-Uflash:w:{runtime.platform.path}/bootloaders/{bootloader.file}:i"
 
 tools.avrdude.bootloader.fuse0="-Ufuse0:w:{bootloader.WDTCFG}:m"
 tools.avrdude.bootloader.fuse1="-Ufuse1:w:{bootloader.BODCFG}:m"
