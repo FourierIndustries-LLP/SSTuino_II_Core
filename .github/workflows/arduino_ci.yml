@@ -32,7 +32,7 @@ jobs:
           # Path containing Arduino projects.
           path: ./megaavr
           # How strict the checks are.
-          compliance: strict
+          compliance: permissive
           # The type of project to check.
           project-type: platform
           # Search path recursively for projects to check.
