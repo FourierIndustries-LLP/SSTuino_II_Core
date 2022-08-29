@@ -1,6 +1,6 @@
 # SSTuino II Core
 
-![License](https://img.shields.io/github/license/FourierIndustries-LLP/SSTuino_II_Core) ![Build Status](https://travis-ci.org/dwyl/esta.svg?branch=master)
+![License](https://img.shields.io/github/license/FourierIndustries-LLP/SSTuino_II_Core) ![Linting Status](https://github.com/FourierIndustries-LLP/SSTuino_II_Core/actions/workflows/arduino_ci.yml/badge.svg)
 
 > The Arduino core powering the SSTuino II
 
