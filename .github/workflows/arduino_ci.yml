@@ -42,6 +42,3 @@ jobs:
           # Show more information on the checks being run.
           verbose: false
 
-      # Runs a set of commands using the runners shell
-      - name: arduino_ci
-        uses: Arduino-CI/action@v0.1.3
