@@ -108,7 +108,7 @@ jq -r                                        \
       "version": "7.3.0-atmel3.6.1-arduino7"
     },
     {
-      "packager": "MegaCoreX",
+      "packager": "SSTuino II Series Boards",
       "name": "avrdude",
       "version": "7.0.0-arduino2"
     },
