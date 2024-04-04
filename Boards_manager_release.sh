@@ -110,7 +110,7 @@ jq -r                                        \
     {
       "packager": "SSTuino II Series Boards",
       "name": "avrdude",
-      "version": "7.0.0-arduino2"
+      "version": "7.1-arduino.1"
     },
     {
       "packager": "arduino",
